@@ -10,11 +10,16 @@
 
 **AI/ML Engineer | Full-Stack Developer | Healthcare AI Specialist**
 
-[🌐 Portfolio](#) • [💼 LinkedIn](#) • [✉️ Email](mailto:mahateermuhammad100@gmail.com) • [🐦 Twitter](#)
+### Connect With Me
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](#portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](#linkedin)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](#twitter)
 
 ---
 
-![GitHub followers](https://img.shields.io/github/followers/MahateerMuhammad?style=social&label=Follow)
+![GitHub followers](https://img.shields.io/github/followers/MahateerMuhammad?style=social&label=Followers)
 ![GitHub User's stars](https://img.shields.io/github/stars/MahateerMuhammad?style=social&label=Stars)
 
 </div>
@@ -93,7 +98,7 @@ I'm an **AI and machine learning engineer** with a strong focus on **healthcare 
 [![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Clinical-Digital-Twin)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas)
 ![PyArrow](https://img.shields.io/badge/PyArrow-FF6B6B?style=flat)
-![Scikit_learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn)
+![Scikit_learn](https://img.shields.io/badge/Scikit_learn-F7931E?style=flat&logo=scikit-learn)
 
 **5-Stage Pipeline:**
 1. Load (schema inference) → 2. Clean (validation) → 3. EDA (analysis) → 4. Features (engineering) → 5. Datasets (outputs)
@@ -233,7 +238,7 @@ I'm an **AI and machine learning engineer** with a strong focus on **healthcare 
 AI/ML Development     ████████████████░░ 90%
 Data Engineering      ████████████░░░░░░ 80%
 Backend Development   ██████████████░░░░ 85%
-Frontend Development  ███████████░░░���░░░ 75%
+Frontend Development  ███████████░░░░░░░ 75%
 DevOps & Deployment   ██████░░░░░░░░░░░░ 40%
 ```
 
@@ -252,11 +257,10 @@ DevOps & Deployment   ██████░░░░░░░░░░░░ 40%
 
 ### Let's Connect!
 
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MahateerMuhammad)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MahateerMuhammad)
 
 **I'm interested in:**
 - 🤝 Collaborating on healthcare AI projects
