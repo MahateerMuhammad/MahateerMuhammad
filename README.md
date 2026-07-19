@@ -1,221 +1,355 @@
 # Mahateer Muhammad
 
-AI/ML Engineer | Full-Stack Developer | Healthcare AI Specialist
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+
+**AI/ML Engineer | Full-Stack Developer | Healthcare AI Specialist**
+
+[Portfolio](#) • [LinkedIn](#) • [Email](mailto:mahateermuhammad100@gmail.com) • [Twitter](#)
+
+![GitHub followers](https://img.shields.io/github/followers/MahateerMuhammad?style=social)
+![GitHub User's stars](https://img.shields.io/github/stars/MahateerMuhammad?style=social)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+- [About Me](#about-me)
+- [Featured Projects](#-featured-projects)
+- [Tech Stack](#-tech-stack)
+- [Stats & Insights](#-stats--insights)
+- [Current Focus](#-current-focus)
+- [Get in Touch](#-get-in-touch)
 
 ---
 
 ## About Me
 
-I'm an AI and machine learning engineer with a strong focus on **healthcare AI** and **data engineering**. My work spans deep learning for medical imaging, clinical data preprocessing at scale, and building interactive tools for understanding neural networks. I'm proficient in both backend and frontend development, with experience building production-ready systems that process complex datasets and make machine learning interpretable.
+I'm an **AI and machine learning engineer** with a strong focus on **healthcare AI** and **data engineering**. My work spans deep learning for medical imaging, clinical data preprocessing at scale, and building interactive tools for understanding neural networks. I'm proficient in both backend and frontend development, with experience building production-ready systems that process complex datasets and make machine learning interpretable.
 
-My projects demonstrate expertise in:
-- **Medical AI**: Brain tumor detection with explainability (Grad-CAM)
-- **Clinical Data Engineering**: Processing MIMIC-IV datasets with Spark
-- **Deep Learning Education**: Building interactive neural network visualization tools
-- **Full-Stack Development**: From React/TypeScript frontends to FastAPI/Express backends
-- **Mobile Development**: Flutter applications for healthcare and social platforms
+### 🎯 Key Specializations
+
+| Area | Expertise | Evidence |
+|------|-----------|----------|
+| **Medical AI** | Brain tumor classification with Grad-CAM | ~92% accuracy, explainable predictions |
+| **Clinical Data** | MIMIC-IV preprocessing pipeline | 40GB+ dataset, production-grade |
+| **Deep Learning** | Neural network visualization & education | 255+ tests, real PyTorch hooks |
+| **Full-Stack** | React + FastAPI/Express systems | Multiple deployed applications |
+| **Mobile** | Flutter cross-platform apps | Firebase, real-time features |
 
 ---
 
 ## 🔬 Featured Projects
 
-### 1. **DeepVision** — Interactive Neural Network Visualizer
-A production-grade educational platform for understanding how neural networks actually work, layer by layer, with real PyTorch activations and gradients.
+### 1. 🧠 **DeepVision** — Interactive Neural Network Visualizer
+> A production-grade educational platform for understanding neural networks from first principles
 
-**Live Instruments:**
-- Network Canvas: Semantic-zoom graph with VCR-style forward/backward stepping
-- Activation Lab: Curves, derivatives, freehand drawing mode
-- CNN Lab: Filter factory, convolution explorer, receptive field visualization, saliency mapping
-- Optimizer Arena: Loss surfaces, optimizer racing, divergence analysis
-- BatchNorm Tracker: Real-time feature normalization visualization
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/DeepVision)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React%2019-61DAFB?style=flat&logo=react&logoColor=black)
+![D3.js](https://img.shields.io/badge/D3.js-F9A825?style=flat&logo=d3dotjs&logoColor=black)
 
-**Tech Stack:** PyTorch 2.2 · FastAPI · React 19 · Vite · D3.js · Three.js · Tailwind CSS
+**What You Can Do:**
+- ✅ **Network Canvas**: Semantic-zoom D3 graph · VCR-style forward/backward stepping · Live activation heatmaps
+- ✅ **Activation Lab**: Interactive curves · Derivative visualization · Freehand drawing mode
+- ✅ **CNN Lab**: Filter factory (hand-edit kernels) · Feature maps in 3D · Receptive field tracing · Saliency maps
+- ✅ **Optimizer Arena**: Loss surface visualization · Optimizer racing · Momentum analysis
+- ✅ **BatchNorm Tracker**: Real-time feature normalization animation
 
-**Why it matters:** 255 tests, zero faked data. Every number on screen comes live from PyTorch via hooks. Designed for students, educators, and researchers who want to *see* what's happening inside their models.
-
-[Repository](https://github.com/MahateerMuhammad/DeepVision)
-
----
-
-### 2. **Brain Tumor Detection with Explainable AI**
-ResNet50 transfer learning model for 4-class MRI classification (glioma, meningioma, notumor, pituitary) with Grad-CAM explainability and interactive Streamlit dashboard.
-
-**Key Features:**
-- ~91–92% test accuracy on 4-class brain tumor classification
-- Grad-CAM saliency maps for model interpretability
-- Interactive web interface via Streamlit
-- Comprehensive documentation on known limitations
-
-**Tech Stack:** TensorFlow/Keras · ResNet50 · Streamlit · NumPy · Matplotlib
-
-**Educational Value:** Demonstrates the importance of explainability in medical AI and handles the practical trade-offs between accuracy and real-world applicability.
-
-[Repository](https://github.com/MahateerMuhammad/Brain-Tumor-Detection-and-Classification-using-Deep-Learning-with-Explainable-AI--Grad-CAM-)
+**Why It's Different:** 255 tests, zero faked data. Every number on screen comes live from PyTorch via hooks.
 
 ---
 
-### 3. **Clinical Digital Twin** — Production Data Engineering Pipeline
-Enterprise-grade preprocessing and feature engineering pipeline for MIMIC-IV (40GB+ clinical dataset). Transforms raw hospital/ICU/clinical notes into ML-ready datasets.
+### 2. 🏥 **Brain Tumor Detection with Explainable AI**
+> Healthcare AI that explains its decisions in real-time
 
-**Pipeline Stages:**
-1. **Load**: Schema inference for CSV/gzip files (hospitals, ICU stays, clinical notes)
-2. **Clean**: Data validation, missing value handling, duplicate removal
-3. **EDA**: Automated exploratory analysis with publication-quality plots
-4. **Features**: Demographic, diagnostic, laboratory, vital, medication, procedure, temporal, and interaction features
-5. **Datasets**: Patient/admission/ICU/time-series/clinical-notes level datasets
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Brain-Tumor-Detection-and-Classification-using-Deep-Learning-with-Explainable-AI--Grad-CAM-)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![ResNet50](https://img.shields.io/badge/ResNet50-Transfer%20Learning-blue?style=flat)
 
-**Output:** Six Parquet datasets ready for mortality/readmission/LOS prediction, embedding models, or Transformer NLP
+**Key Metrics:**
+- 🎯 **~91–92% test accuracy** on 4-class classification
+- 📊 **Grad-CAM saliency maps** for explainability
+- 🎨 **Interactive Streamlit dashboard** with real-time predictions
+- ⚠️ **Transparent limitations** documented
 
-**Tech Stack:** Pandas · PyArrow · Scikit-learn · Plotly · YAML config · Jupyter
-
-**Production Ready:** Chunked I/O for 40GB+ chartevents · Comprehensive logging · Reproducible with central config · No silent data removal
-
-[Repository](https://github.com/MahateerMuhammad/Clinical-Digital-Twin)
+**Classification Classes:** Glioma | Meningioma | No Tumor | Pituitary
 
 ---
 
-### 4. **Retail Data Analyzer with PySpark**
-Large-scale retail transaction analysis using distributed Apache Spark with PostgreSQL backend. Demonstrates data transformation, aggregations, window functions, and ML-ready feature engineering.
+### 3. 📊 **Clinical Digital Twin** — Production Data Engineering Pipeline
+> Enterprise-grade preprocessing for 40GB+ clinical datasets
 
-**Analytics Delivered:**
-- Revenue analysis by country and customer
-- Basket size and product diversity metrics
-- Spend classification (Low/Medium/High)
-- Rolling averages and purchase ranking
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Clinical-Digital-Twin)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![PyArrow](https://img.shields.io/badge/PyArrow-FF6B6B?style=flat)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 
-**Tech Stack:** PySpark · PostgreSQL · Window Functions · Spark SQL
+**5-Stage Pipeline:**
 
-[Repository](https://github.com/MahateerMuhammad/Retail_data_analyzer)
+```
+Raw MIMIC-IV Data
+    ↓ Load (schema inference)
+    ↓ Clean (validation, deduplication)
+    ↓ EDA (automated analysis)
+    ↓ Features (90+ engineered features)
+    ↓ Datasets (6 outputs for different granularities)
+ML-Ready Parquet Files
+```
 
----
+**Output Datasets:**
+- Patient-level aggregations
+- Hospital admission features
+- ICU stay data
+- Time-series events
+- Clinical notes (TF-IDF ready)
+- Patient similarity vectors
 
-### 5. **School Management System** — Enterprise Backend
-Full-featured school management backend with payment reconciliation, fee vouchers, and admin dashboards. Demonstrates professional backend architecture.
-
-**Features:**
-- Express.js + PostgreSQL
-- AWS S3 file uploads
-- JWT authentication
-- Rate limiting and security (Helmet, CORS)
-- Fee reconciliation scripts with dry-run mode
-
-**Tech Stack:** Express.js · PostgreSQL · AWS S3 · JWT · Helmet · Morgan logging
-
-[Repository](https://github.com/MahateerMuhammad/School-B)
-
----
-
-### 6. **Velzck Shop** — Full-Stack E-Commerce Platform
-Complete e-commerce system with separate frontend (React) and backend (Express + MongoDB).
-
-**Backend:** Express.js · MongoDB · Mongoose · Cloudinary · JWT authentication · Email notifications (Nodemailer/Resend)
-
-**Frontend:** React 18 · Vite · React Router · Axios · Cookie management
-
-[Repository](https://github.com/MahateerMuhammad/Velzck_Shop)
+**Production Features:** Chunked I/O · Comprehensive logging · Config-driven · No silent data removal
 
 ---
 
-### 7. **Social-Swap (Konexea)** — Flutter Social App with AI
-Modern Flutter social media application featuring AI-powered interactions, real-time chat, and multimedia sharing.
+### 4. ⚡ **Retail Data Analyzer with PySpark**
+> Distributed big data processing for large-scale analytics
 
-**Tech Stack:** Flutter 3+ · Firebase (Auth, Firestore, Storage) · Supabase · Google ML Kit Translation · Rive animations
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Retail_data_analyzer)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat&logo=apachespark&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 
-[Repository](https://github.com/MahateerMuhammad/Social-Swap)
+**Analytics:** Revenue by country · Customer metrics · Spend classification · Rolling averages
 
 ---
 
-### 8. **CALiNGA** — On-Demand Care Mobile App
-Healthcare platform connecting patients with care providers. Built in Flutter with Firebase and Google Maps integration.
+### 5. 🏫 **School Management System** — Enterprise Backend
+> Professional backend architecture for institutional management
 
-**Features:**
-- Real-time location services (Google Maps, Geolocator)
-- Firebase authentication and real-time database
-- Provider matching and routing
-- In-app notifications
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/School-B)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS%20S3-FF9900?style=flat&logo=amazonaws&logoColor=white)
 
-**Tech Stack:** Flutter · Firebase · Google Maps · Geolocator · Geocoding
+**Features:** JWT auth · Rate limiting · Fee reconciliation · PDF generation · S3 uploads
 
-[Repository](https://github.com/MahateerMuhammad/calinga)
+---
+
+### 6. 🛍️ **Velzck Shop** — Full-Stack E-Commerce
+> Complete e-commerce platform with separate frontend & backend
+
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Velzck_Shop)
+![React](https://img.shields.io/badge/React%2018-61DAFB?style=flat&logo=react&logoColor=black)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+
+**Stack:** Frontend (React + Vite) · Backend (Express) · Database (MongoDB) · Payments · Image uploads (Cloudinary)
+
+---
+
+### 7. 📱 **Social-Swap (Konexea)** — Flutter Social App with AI
+> Modern social platform with real-time features and AI translation
+
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Social-Swap)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+![Google ML Kit](https://img.shields.io/badge/Google%20ML%20Kit-Translation-blue?style=flat)
+
+**Features:** Real-time chat · AI translation · Media sharing · Rive animations · Supabase integration
+
+---
+
+### 8. 🚑 **CALiNGA** — On-Demand Healthcare Platform
+> Connect patients with care providers in real-time
+
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/calinga)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=flat&logo=googlemaps&logoColor=white)
+
+**Features:** Real-time location tracking · Provider matching · In-app notifications · Geolocator integration
 
 ---
 
 ## 🛠 Tech Stack
 
-### **Programming Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
+### 🐍 **Languages**
+<div align="left">
 
-### **AI & Machine Learning**
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 
-### **Data Engineering & Analytics**
-![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat&logo=apachespark&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![PyArrow](https://img.shields.io/badge/PyArrow-FF6B6B?style=flat)
+</div>
 
-### **Backend & APIs**
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+### 🤖 **AI & Machine Learning**
+<div align="left">
 
-### **Frontend & UI**
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![React Router](https://img.shields.io/badge/React%20Router-CA4245?style=flat&logo=reactrouter&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-![D3.js](https://img.shields.io/badge/D3.js-F9A825?style=flat&logo=d3dotjs&logoColor=black)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-### **Mobile Development**
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+</div>
 
-### **Cloud & Infrastructure**
-![AWS S3](https://img.shields.io/badge/AWS%20S3-FF9900?style=flat&logo=amazonaws&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white)
+### 📊 **Data Engineering & Analytics**
+<div align="left">
 
-### **Developer Tools**
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=flat&logo=jupyter&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+</div>
+
+### 🚀 **Backend & APIs**
+<div align="left">
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+</div>
+
+### 🎨 **Frontend & UI**
+<div align="left">
+
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![D3.js](https://img.shields.io/badge/D3.js-F9A825?style=for-the-badge&logo=d3dotjs&logoColor=black)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
+
+</div>
+
+### 📱 **Mobile & Cloud**
+<div align="left">
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+</div>
+
+### 🛠️ **Tools & DevOps**
+<div align="left">
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)
+
+</div>
+
+---
+
+## 📊 Stats & Insights
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahateerMuhammad&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MahateerMuhammad&layout=compact&theme=dark&hide_border=true&langs_count=8)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MahateerMuhammad&theme=dark&hide_border=true)
+
+</div>
 
 ---
 
 ## 🎯 Current Focus
 
-- **Healthcare AI**: Medical imaging, clinical data pipelines, and AI explainability
-- **Deep Learning Education**: Making neural networks interpretable and understandable
-- **Data Engineering**: Scalable pipelines for complex clinical datasets
-- **Full-Stack Development**: Building complete systems from ML backend to interactive frontend
+<table>
+<tr>
+<td width="50%">
+
+### 🏥 Healthcare AI
+- Medical imaging & diagnostics
+- Clinical data engineering
+- AI explainability & interpretability
+
+</td>
+<td width="50%">
+
+### 🧠 Deep Learning Education
+- Interactive neural network tools
+- Real-time visualization
+- Theory meets practice
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 💾 Data Engineering at Scale
+- MIMIC-IV preprocessing
+- Distributed processing (Spark)
+- ML-ready pipelines
+
+</td>
+<td width="50%">
+
+### 🔄 Full-Stack Development
+- PyTorch → FastAPI → React
+- Production-grade systems
+- User-centric design
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 📊 GitHub Stats
+## 💡 Interests & Expertise
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahateerMuhammad&show_icons=true&theme=dark&hide_border=true)
+```
+AI/ML        ████████████████░░ 90%
+Data Eng     ████████████░░░░░░ 80%
+Backend      ██████████████░░░░ 85%
+Frontend     ███████████░░░░░░░ 75%
+DevOps       ██████░░░░░░░░░░░░ 40%
+```
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MahateerMuhammad&layout=compact&theme=dark&hide_border=true)
+**Research Interests:**
+- 🏥 Healthcare AI & Medical Imaging
+- 🧠 Explainable AI (XAI)
+- 📊 Large-scale data processing
+- 🎓 ML education & interpretability
+- 🚀 Production ML systems
 
 ---
 
 ## 📫 Get in Touch
 
-<!-- Update these with your actual contact information -->
-- **Email**: mahateermuhammad100@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **Twitter/X**: [@yourhandle](https://twitter.com/yourhandle)
-- **Portfolio**: [Your Portfolio Website](https://yourportfolio.com)
+<div align="center">
+
+### Let's Connect!
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MahateerMuhammad)
+
+**I'm always interested in:**
+- 🤝 Collaborating on healthcare AI projects
+- 💬 Discussing deep learning & ML engineering
+- 🎓 Contributing to open-source education tools
+- 📬 Sharing knowledge about production ML systems
 
 ---
 
-*I'm always interested in healthcare AI, deep learning research, and building tools that make complex systems understandable. Feel free to reach out to discuss projects or collaborate!*
+<div>
+
+**Last Updated:** 2026-07-19 | **Profile Status:** ✅ Active
+
+</div>
+
+</div>
