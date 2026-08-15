@@ -18,7 +18,6 @@
 
 
 
-
 </div>
 
 ---
@@ -35,7 +34,7 @@
 
 ## About Me
 
-I'm an **AI and machine learning engineer** with a strong focus on **healthcare AI** and **data engineering**. My work spans deep learning for medical imaging, clinical data preprocessing at scale, and building interactive tools for understanding neural networks. I'm proficient in both backend and frontend development, with experience building production-ready systems that process complex datasets and make machine learning interpretable.
+I'm an **AI and machine learning engineer** with a strong focus on **healthcare AI** and **data engineering**. My work spans deep learning for medical imaging, clinical data preprocessing at scale[...]
 
 ### 🎯 Key Specializations
 
@@ -75,7 +74,7 @@ I'm an **AI and machine learning engineer** with a strong focus on **healthcare 
 
 > Healthcare AI that explains its decisions in real-time
 
-[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Brain-Tumor-Detection-and-Classification-using-Deep-Learning-with-Explainable-AI--Grad-CAM-)
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Brain-Tumor-Detection-and-Classification-using-Deep-Learni...)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit)
 ![ResNet50](https://img.shields.io/badge/ResNet50-Transfer_Learning-blue?style=flat)
@@ -116,25 +115,31 @@ I'm an **AI and machine learning engineer** with a strong focus on **healthcare 
 
 ---
 
-### 5. 🏫 **School Management System** — Enterprise Backend
+### 5. 🤖 **Multi-Agent Debate System** — multi-agent-debate
 
-[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/School-B)
-![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql)
-![AWS](https://img.shields.io/badge/AWS_S3-FF9900?style=flat&logo=amazonaws)
+> A research-focused framework for debate-style multi-agent reasoning and evaluation. Implements agent orchestration, debate policies, and evaluation metrics to study emergent argumentative behavior.
 
-**Features:** JWT auth · Rate limiting · Fee reconciliation · S3 uploads · PDF generation
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/multi-agent-debate)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python)
+
+**Highlights:**
+- Multi-agent orchestration for structured debates
+- Pluggable policies and scoring mechanisms
+- Useful for research into agent reasoning and alignment
 
 ---
 
-### 6. 🛍️ **Velzck Shop** — Full-Stack E-Commerce
+### 6. 🏥 **MedTrust** — Clinical AI Toolkit
 
-[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Velzck_Shop)
-![React](https://img.shields.io/badge/React_18-61DAFB?style=flat&logo=react)
-![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb)
+> End-to-end healthcare AI utilities for data preprocessing, validation, and model deployment. Focused on reproducible clinical pipelines and model evaluation.
 
-**Stack:** Frontend (React + Vite) · Backend (Express) · Database (MongoDB) · Cloudinary uploads
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/MedTrust)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python)
+
+**Highlights:**
+- Clinical data cleaning & schema transforms
+- Validation suites for model inputs and outputs
+- Deployment helpers for reproducible inference
 
 ---
 
@@ -267,6 +272,6 @@ DevOps & Deployment   ██████░░░░░░░░░░░░ 40%
 
 ---
 
-**Last Updated:** 2026-07-19 | **Status:** ✅ Open to Opportunities
+**Last Updated:** 2026-08-15 | **Status:** ✅ Open to Opportunities
 
 </div>
