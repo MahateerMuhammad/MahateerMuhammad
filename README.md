@@ -1,176 +1,283 @@
 <div align="center">
 
-# Mahateer Muhammad
+# Hi 👋 I'm Mahateer Muhammad
 
-**AI/ML Engineer · Healthcare AI · Applied LLM Systems**
+### AI/ML Engineer | Healthcare AI Specialist | Full-Stack Developer
+
+[![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org/)
+[![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](#)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahateer-muhammad-a74284356)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
 
+![Profile Views](https://komarev.com/ghpvc/?username=MahateerMuhammad&color=blueviolet&style=flat-square)
+
 </div>
 
 ---
 
-## About
-
-AI/ML engineer with a focus on healthcare AI, clinical data systems, and applied LLM work. Background in Flutter and full-stack development (2+ years, co-founder of UXELERATE), currently shifting focus toward LLM/RAG and applied AI systems.
-
-Recent work: DPO fine-tuning for medical hallucination reduction, large-scale clinical trajectory modeling on MIMIC-IV, and production-hardened multi-agent LLM orchestration.
-
-| Area | Focus | Evidence |
-|---|---|---|
-| Preference optimization | DPO fine-tuning for factual grounding | MedTrust — F1 0.535 → 0.650 on MedHallu |
-| Clinical data engineering | Large-scale EHR pipelines | 546K+ MIMIC-IV stays, 40GB+ processed |
-| LLM systems in production | Multi-agent orchestration, LLMOps | Rate limiting, prompt injection defense, Docker hardening |
-| Medical imaging | CNN classification with explainability | 90.69% accuracy, Grad-CAM |
-| Mobile development | Flutter cross-platform apps | Firebase, real-time features |
+## 📋 Table of Contents
+- [About Me](#-about-me)
+- [Featured Projects](#-featured-projects)
+- [Tech Stack](#-tech-stack)
+- [GitHub Stats](#-github-stats--insights)
+- [Currently](#-currently)
+- [Get in Touch](#-get-in-touch)
 
 ---
 
-## Projects
+## 🧠 About Me
 
-### MedTrust — Faithfulness-Optimized Medical QA via DPO
+```python
+class Mahateer:
+    def __init__(self):
+        self.role = "AI/ML Engineer"
+        self.focus = ["Healthcare AI", "Preference Optimization", "LLM Systems"]
+        self.background = "2+ years Flutter dev, co-founder @ UXELERATE"
+        self.currently_learning = "LLM/RAG, applied AI systems"
+        self.fun_fact = "trained a DPO model on a single T4 in ~2 hours"
 
-Reduces hallucination in a 7B clinical LLM using Direct Preference Optimization rather than standard SFT. Ground-truth PubMedQA answers are the chosen response, matched hallucinated answers are the rejected response, for the same clinical query.
+    def say_hi(self):
+        print("Let's build something that doesn't hallucinate.")
+```
 
-- Base model: Qwen2.5-7B-Instruct, 4-bit QLoRA via Unsloth
-- Trained with TRL's `DPOTrainer`, LoRA rank 16, β = 0.1
-- 40.3M trainable LoRA parameters (0.53% of total weights)
-- ~2 hours on a single Kaggle T4/P100 (16GB VRAM)
-- Evaluated on 999 held-out, human-annotated MedHallu pairs
+I build AI systems for healthcare — clinical trajectory models, hallucination-reducing LLM fine-tunes, and production-grade multi-agent orchestration. Currently pivoting from mobile development into applied AI, RAG, and preference optimization.
 
-**Results**
+### 🎯 Key Specializations
 
-| Tier | Base Model F1 | MedTrust DPO F1 | Gain |
+| Area | Expertise | Evidence |
+|---|---|---|
+| 🎯 **Preference Optimization** | DPO fine-tuning for factual grounding | F1 0.535 → 0.650 on MedHallu |
+| 🏥 **Clinical Data Engineering** | Large-scale EHR pipelines | 546K+ MIMIC-IV stays, 40GB+ processed |
+| 🤖 **LLM Systems in Production** | Multi-agent orchestration, LLMOps | Rate limiting, prompt injection defense, hardened Docker |
+| 🖼️ **Medical Imaging** | CNN classification + explainability | 90.69% accuracy, Grad-CAM |
+| 📱 **Mobile Development** | Flutter cross-platform apps | Firebase, real-time features |
+
+---
+
+## 🔬 Featured Projects
+
+### 1. 🩺 **MedTrust** — Faithfulness-Optimized Medical QA via DPO
+
+> Teaching a 7B model to stop confidently making things up in clinical answers
+
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/MedTrust)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch)
+![Unsloth](https://img.shields.io/badge/Unsloth-FF6600?style=flat)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
+
+Fine-tunes Qwen2.5-7B-Instruct with **Direct Preference Optimization** (not SFT) on the MedHallu benchmark — matched grounded vs. hallucinated PubMedQA answers, 4-bit QLoRA, 40.3M trainable LoRA params (0.53% of total weights), ~2 hours on one Kaggle T4.
+
+**Benchmark results (999 held-out human-annotated pairs):**
+
+| Tier | Base F1 | MedTrust DPO F1 | Δ |
 |---|---|---|---|
-| Easy | 0.612 | 0.747 | +13.5 |
-| Medium | 0.530 | 0.648 | +11.8 |
-| Hard | 0.498 | 0.586 | +8.8 |
+| 🟢 Easy | 0.612 | **0.747** | +13.5 |
+| 🟡 Medium | 0.530 | **0.648** | +11.8 |
+| 🔴 Hard | 0.498 | **0.586** | +8.8 |
 | **Overall** | **0.535** | **0.650** | **+11.5** |
 
-Hard-tier performance (0.586 F1) approaches GPT-4o's reported ~0.625 on the same split.
+Hard-tier score (0.586) lands close to GPT-4o's reported ~0.625 on the same split — from a model 1/20th the size, fine-tuned on a free GPU.
 
-`Python` `PyTorch` `Unsloth` `TRL` `QLoRA` `Kaggle`
+**Case study — the model catching a fatal contraindication:**
 
----
+*Query:* Should beta-blockers be given immediately in cardiogenic shock from acute MI?
 
-### Clinical Digital Twin — Patient Risk & Decision-Support System
-
-Production-grade pipeline turning 40GB+ of raw MIMIC-IV tables (546K+ hospital stays, 500K+ patients) into ML-ready datasets, with a downstream multi-task prediction and LLM decision-support layer.
-
-- 5-stage pipeline: load (schema inference) → clean (validation) → EDA → feature engineering → dataset output
-- Multi-task models across 5 clinical prediction tasks
-- 0.949 AUROC for 24-hour mortality, 0.897 AUROC for 6-hour ward deterioration
-- LLM/RAG decision-support agent with SHAP TreeExplainer interpretability, counterfactual "what-if" simulation, and clinical guideline retrieval (KDIGO, Surviving Sepsis)
-- Patient embedding layer for similar-patient retrieval
-
-`Python` `XGBoost` `LightGBM` `PyArrow` `SHAP` `RAG`
+❌ Base model: "Yes, initiate immediately in all AMI patients." *(dangerous — beta-blockers are contraindicated here)*
+✅ MedTrust: "No — contraindicated in cardiogenic shock due to negative inotropic effects. Stabilize hemodynamics first."
 
 ---
 
-### Multi-Agent Debate Framework — Production LLM Orchestration
+### 2. 🏥 **Clinical Digital Twin** — Patient Risk & Decision-Support System
 
-A FastAPI service where a single request to `/api/v1/run` can spawn up to 25 nested LLM API calls across Proponent/Opponent agents. Built past the prototype stage with a full LLMOps and security hardening pass.
+> 40GB of raw hospital data in, a risk-scoring RAG agent out
 
-- Distributed rate limiting via `slowapi` with Redis-backed storage (cross-worker/pod safe)
-- Prompt injection defense: XML delimiter encapsulation of untrusted input, tag-stripping on user input, system-level security directive
-- Request tracing with correlation IDs, structured JSON logging
-- Docker hardened: non-root user, `cap_drop: ALL`, correct ownership
-- Async connection pooling moved outside the retry loop, request timeouts via `asyncio.wait_for`
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Clinical-Digital-Twin)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas)
+![XGBoost](https://img.shields.io/badge/XGBoost-blue?style=flat)
+![SHAP](https://img.shields.io/badge/SHAP-red?style=flat)
 
-`Python` `FastAPI` `Docker` `Redis`
+Production pipeline processing 546K+ MIMIC-IV hospital stays (40GB+ raw temporal tables) into ML-ready Parquet datasets, feeding multi-task clinical prediction models.
 
----
+**5-Stage Pipeline:** Load (schema inference) → Clean (validation) → EDA → Feature Engineering → Datasets
 
-### Brain Tumor Detection with Explainable AI
-
-Four-class brain tumor classification from MRI scans (Kaggle dataset), built as a five-notebook pipeline: EDA, preprocessing, custom CNN, transfer learning, Grad-CAM.
-
-- 90.69% accuracy with ResNet50 transfer learning
-- Grad-CAM visual explanations for model predictions
-- Interactive Streamlit dashboard
-
-`TensorFlow` `ResNet50` `Streamlit` `Grad-CAM`
+- 🎯 **0.949 AUROC** — 24-hour mortality prediction
+- 🎯 **0.897 AUROC** — 6-hour ward deterioration
+- 🧩 LLM/RAG decision-support agent: SHAP TreeExplainer interpretability, counterfactual "what-if" simulation, clinical guideline retrieval (KDIGO, Surviving Sepsis)
+- 🔗 Patient embedding layer for similar-patient retrieval
 
 ---
 
-### DeepVision — Interactive Neural Network Visualizer
+### 3. ⚔️ **Multi-Agent Debate Framework** — Production LLM Orchestration
 
-Educational platform for understanding neural networks from first principles, built on live PyTorch hooks rather than simulated data.
+> A single API call, 25 nested LLM calls, and enough hardening to survive contact with the real world
 
-- Network Canvas: semantic-zoom D3 graph with step-through execution
-- Activation Lab, CNN Lab (filter factory, receptive fields, saliency maps), Optimizer Arena, BatchNorm Tracker
-- 255 tests, all values sourced live from PyTorch
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/multi-agent-debate)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 
-`PyTorch` `FastAPI` `React 19` `D3.js`
+FastAPI service where `/api/v1/run` spawns up to 25 nested LLM calls across Proponent/Opponent agents. Pushed through a full LLMOps + security hardening pass:
 
----
-
-### Retail Data Analyzer
-
-Distributed analytics pipeline for large-scale retail data using PySpark.
-
-- Revenue analysis, customer metrics, spend classification, rolling averages
-
-`PySpark` `PostgreSQL`
+- 🛡️ Distributed rate limiting (`slowapi` + Redis, cross-worker/pod safe)
+- 🛡️ Prompt injection defense — XML delimiter encapsulation, input tag-stripping, system-level security directive
+- 📊 Request tracing with correlation IDs, structured JSON logs
+- 🔒 Docker hardened — non-root user, `cap_drop: ALL`, correct ownership
+- ⚡ Async connection pooling moved outside the retry loop, `asyncio.wait_for` timeouts
 
 ---
 
-### Social-Swap (Konexea) — Flutter Social App with AI
+### 4. 🧠 **Brain Tumor Detection with Explainable AI**
 
-Cross-platform social app with real-time chat and AI-assisted translation.
+> Healthcare AI that shows its work
 
-`Flutter` `Firebase` `Supabase`
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Brain-Tumor-Detection-and-Classification-using-Deep-Learning)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit)
+![ResNet50](https://img.shields.io/badge/ResNet50-Transfer_Learning-blue?style=flat)
 
----
-
-### CALiNGA — On-Demand Healthcare Platform
-
-Mobile platform connecting patients with healthcare providers.
-
-- Real-time location tracking, provider matching, in-app notifications
-
-`Flutter` `Firebase` `Google Maps`
+- 🎯 **90.69% accuracy** on 4-class tumor classification (ResNet50 transfer learning)
+- 📊 Grad-CAM explainability layered on top of every prediction
+- 🎨 Interactive Streamlit dashboard
+- 🧪 Five-notebook pipeline: EDA → Preprocessing → Custom CNN → Transfer Learning → Grad-CAM
 
 ---
 
-## Tech Stack
+### 5. 🎨 **DeepVision** — Interactive Neural Network Visualizer
 
-**Languages:** Python · JavaScript/TypeScript · Dart · C++
+> Neural networks, explained by the network itself
 
-**AI/ML:** PyTorch · TensorFlow · Keras · scikit-learn · Unsloth · TRL · Hugging Face Transformers
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/DeepVision)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=flat&logo=react)
 
-**Data Engineering:** Apache Spark · Pandas · PyArrow · PostgreSQL · MongoDB
-
-**Backend:** FastAPI · Express · Node.js
-
-**Frontend:** React · Vite · Tailwind CSS · D3.js
-
-**Mobile & Cloud:** Flutter · Firebase · AWS · Docker
+- 🖼️ Network Canvas — semantic-zoom D3 graph, VCR-style stepping
+- 🧪 Activation Lab, CNN Lab (filter factory, receptive fields, saliency), Optimizer Arena, BatchNorm Tracker
+- ✅ 255 tests, zero faked data — every number comes live from PyTorch hooks
 
 ---
+
+### 6. ⚡ **Retail Data Analyzer**
+
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Retail_data_analyzer)
+![PySpark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat&logo=apachespark)
+
+Distributed retail analytics on PySpark — revenue analysis, customer metrics, spend classification, rolling averages.
+
+---
+
+### 7. 📱 **Social-Swap (Konexea)** — Flutter Social App with AI
+
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/Social-Swap)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+
+Real-time chat, AI translation, media sharing, Rive animations.
+
+---
+
+### 8. 🚑 **CALiNGA** — On-Demand Healthcare Platform
+
+[![View on GitHub](https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github)](https://github.com/MahateerMuhammad/calinga)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter)
+![GoogleMaps](https://img.shields.io/badge/Google_Maps-4285F4?style=flat&logo=googlemaps)
+
+Real-time location tracking, provider matching, in-app notifications.
+
+---
+
+## 🛠 Tech Stack
+
+### Languages
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Dart](https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+### AI & Machine Learning
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/-Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![Scikit_Learn](https://img.shields.io/badge/-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+### Data Engineering
+![Apache_Spark](https://img.shields.io/badge/-Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### Backend & APIs
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![NodeJS](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+### Frontend & UI
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![D3JS](https://img.shields.io/badge/-D3.js-F9A825?style=for-the-badge&logo=d3.js&logoColor=black)
+
+### Mobile & Cloud
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![AWS](https://img.shields.io/badge/-AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+---
+
+## 📊 GitHub Stats & Insights
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahateerMuhammad&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahateerMuhammad&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MahateerMuhammad&layout=compact&theme=dark&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MahateerMuhammad&layout=compact&theme=radical&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MahateerMuhammad&theme=radical&hide_border=true)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MahateerMuhammad&theme=redical&hide_border=true)
 
 </div>
 
 ---
 
-## Currently
+## 💡 Skill Levels
 
-Working on LLM/RAG systems and preference-optimization methods for factual grounding in clinical applications, alongside production hardening of multi-agent LLM services.
+```
+AI/ML Development     ████████████████░░ 90%
+Data Engineering       ██████████████░░░░ 80%
+Backend Development    █████████████░░░░░ 85%
+Frontend Development   ████████████░░░░░░ 75%
+DevOps & Deployment     ███████░░░░░░░░░░░ 40%
+```
 
-Open to collaboration on healthcare AI and applied LLM projects.
+---
+
+## 🎯 Currently
+
+- 🔭 Working on preference-optimization methods (DPO) for factual grounding in clinical LLMs
+- 🌱 Learning applied RAG architectures and production LLMOps
+- 🤝 Open to collaborating on healthcare AI and applied LLM projects
+- ⚡ Fun fact: trained MedTrust's DPO adapter (40.3M params) end-to-end on a free Kaggle T4 in under 2 hours
+
+---
+
+## 📫 Get in Touch
 
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahateermuhammad100@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahateer-muhammad-a74284356)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MahateerMuhammad)
+
+**Status:** ✅ Open to opportunities
 
 </div>
